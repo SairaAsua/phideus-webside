@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --bg-color: #050505;
   --panel-bg: rgba(20, 20, 22, 0.6);
   --border-color: rgba(255, 255, 255, 0.1);
@@ -8,7 +8,7 @@
   --accent-amber: #ffab00;
   --accent-pending: #ff3d00;
   --accent-closed: #00e676;
-  
+
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
   --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
 }
@@ -23,7 +23,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Glassmorphism primitives */
 .glass-panel {
   background: var(--panel-bg);
   backdrop-filter: blur(12px);
@@ -55,7 +54,6 @@ a:hover { opacity: 0.8; }
   padding: 0 2rem;
 }
 
-/* Lazy loading skeleton */
 .skeleton {
   background: linear-gradient(90deg, #111 25%, #222 50%, #111 75%);
   background-size: 200% 100%;
@@ -66,4 +64,32 @@ a:hover { opacity: 0.8; }
 @keyframes shimmer {
   0% { background-position: -200% 0; }
   100% { background-position: 200% 0; }
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding: 0 1.25rem;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  h2 {
+    font-size: 1.65rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.35rem;
+  }
 }

@@ -1,4 +1,4 @@
-.navbar {
+﻿.navbar {
     background: rgba(5, 5, 5, 0.8);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
@@ -13,6 +13,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
 }
 
 .logo {
@@ -30,6 +31,8 @@
 .links {
     display: flex;
     gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 .links a {
@@ -42,4 +45,28 @@
 
 .links a:hover {
     color: #fff;
+}
+
+@media (max-width: 900px) {
+    .navContainer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .links {
+        width: 100%;
+        gap: 0.8rem 1.25rem;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 640px) {
+    .logo {
+        font-size: 1.25rem;
+    }
+
+    .links a {
+        font-size: 0.78rem;
+        letter-spacing: 0.04em;
+    }
 }

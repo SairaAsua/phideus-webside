@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+﻿import { useEffect } from 'react';
 import Layout from '../../components/layout/Layout';
 import MetricCard from '../../components/evidence/MetricCard';
 import DescriptorTable from '../../components/evidence/DescriptorTable';
@@ -76,6 +76,18 @@ export default function Evidence() {
                     </ul>
                 </section>
 
+                <section className={`glass-panel ${classes.protocolPanel}`}>
+                    <h2>Canonical Comparability Protocol</h2>
+                    <ul>
+                        <li>Foundation checkpoint: <code>foundation_locked_e25.pt</code></li>
+                        <li>Freeze policy: <code>run-d</code></li>
+                        <li>Batch size: <code>16</code> | Seed: <code>42</code></li>
+                        <li>Structured pool evaluation: <code>pool=256</code>, <code>queries=500</code></li>
+                        <li>Primary score: <code>S = min(A2M_R@10, M2A_R@10)</code></li>
+                    </ul>
+                    <p className={classes.protocolNote}>Rows in the full descriptor table are comparable only under this shared protocol.</p>
+                </section>
+
                 <section className={classes.visualsSection}>
                     <h2>Scientific Visual Evidence (Class A)</h2>
                     <div className={classes.visualsGrid}>
@@ -107,15 +119,18 @@ export default function Evidence() {
                 </section>
 
                 <section className={classes.metricsSection}>
-                    <h2>Evaluation Metrics & Runs</h2>
+                    <h2>Evaluation Metrics and Runs</h2>
 
-                    <h3 className={classes.metricsSubhead}>Closed Results (Screening & 30-Epoch)</h3>
+                    <h3 className={classes.metricsSubhead}>Closed Results (Screening and 30-Epoch)</h3>
                     <div className={classes.metricsGrid}>
+                        <MetricCard title="Gate 4.3 Baseline (D0)" value="60.2%" status="closed" sourceLabel="@5ep" />
                         <MetricCard title="Gate 4.3 Screening (d4a4)" value="69.8%" status="closed" sourceLabel="@5ep (+9.6pp vs D0)" />
                         <MetricCard title="Gate 4.3 Long Run (d4a4)" value="83.6%" status="closed" sourceLabel="@30ep" />
                         <MetricCard title="Gate 4.3 Long Run (a4r)" value="82.0%" status="closed" sourceLabel="@30ep" />
                         <MetricCard title="Gate 4.3 Long Run (d4-a4r)" value="79.8%" status="closed" sourceLabel="@30ep" />
                         <MetricCard title="Gate 4.4 Bridge (t3-wt)" value="79.8%" status="closed" sourceLabel="@30ep" />
+                        <MetricCard title="Gate 4.3 Long Run (d4a4r)" value="74.4%" status="closed" sourceLabel="@30ep" />
+                        <MetricCard title="Gate 4.4 Long Run (moe-dual)" value="72.6%" status="closed" sourceLabel="@30ep" />
                     </div>
 
                     <h3 className={classes.metricsSubhead}>Closed Results (60-Epoch Gate 4.5)</h3>

@@ -1,4 +1,4 @@
-.page {
+﻿.page {
     padding: 4rem 0;
 }
 
@@ -14,19 +14,13 @@
     margin-bottom: 1rem;
 }
 
-.sourceTag {
-    font-size: 0.8rem;
-    color: var(--text-secondary);
-    font-family: var(--font-mono);
-    opacity: 0.6;
-}
-
 .timeline {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     max-width: 900px;
     position: relative;
+    margin-bottom: 4rem;
 }
 
 .timeline::before {
@@ -103,4 +97,94 @@
 
 .stepBody strong {
     color: #fff;
+}
+
+.milestonesSection {
+    margin-bottom: 4rem;
+}
+
+.milestonesSection h2 {
+    margin-bottom: 1.5rem;
+}
+
+.milestonesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+}
+
+.milestoneCard {
+    padding: 1.25rem;
+}
+
+.milestoneTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.milestoneTop h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-family: var(--font-mono);
+}
+
+.milestoneTop span {
+    color: var(--accent-cyan);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.milestoneCard p {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.priorities {
+    padding: 2rem;
+}
+
+.priorities ol {
+    margin: 0;
+    padding-left: 1.25rem;
+}
+
+.priorities li {
+    margin-bottom: 0.75rem;
+}
+
+@media (max-width: 900px) {
+    .step {
+        margin-left: 2rem;
+        padding: 1.5rem;
+    }
+
+    .timeline::before {
+        left: 16px;
+    }
+
+    .step::before {
+        left: -1.6rem;
+        top: 2rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .page {
+        padding: 2.5rem 0;
+    }
+
+    .lead {
+        font-size: 1.05rem;
+    }
+
+    .stepHeader {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
 }

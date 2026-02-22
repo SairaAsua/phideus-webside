@@ -1,4 +1,4 @@
-.hero {
+﻿.hero {
     position: relative;
     min-height: 80vh;
     display: flex;
@@ -48,13 +48,6 @@
     color: var(--text-secondary);
     line-height: 1.4;
     margin-bottom: 2rem;
-}
-
-.sourceTag {
-    font-size: 0.8rem;
-    color: var(--text-secondary);
-    font-family: var(--font-mono);
-    opacity: 0.6;
 }
 
 .thesisSection,
@@ -132,7 +125,7 @@
 
 .dualityGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
 }
@@ -171,10 +164,11 @@
 }
 
 .dualityCard li::before {
-    content: '→';
+    content: '->';
     position: absolute;
     left: 0;
     color: var(--text-secondary);
+    font-family: var(--font-mono);
 }
 
 .whySection {
@@ -198,6 +192,35 @@
     line-height: 1.5;
     color: var(--text-primary);
     font-weight: 300;
+}
+
+.atmosphereSection {
+    padding: 4rem 0;
+}
+
+.atmosphereGrid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 1.5rem;
+    align-items: stretch;
+}
+
+.atmosphereMedia {
+    min-height: 260px;
+}
+
+.atmosphereText {
+    padding: 1.5rem;
+}
+
+.atmosphereText h2 {
+    margin-bottom: 0.75rem;
+}
+
+.atmosphereNote {
+    color: var(--text-secondary);
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
 }
 
 .nextSection {
@@ -255,4 +278,48 @@
     font-size: 1.1rem;
     color: var(--text-primary);
     line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+    .title {
+        font-size: 3.75rem;
+        letter-spacing: 0.12em;
+    }
+
+    .subtitle,
+    .whyText {
+        font-size: 1.2rem;
+    }
+
+    .atmosphereGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero {
+        min-height: 65vh;
+    }
+
+    .title {
+        font-size: 2.7rem;
+    }
+
+    .thesisSection,
+    .dualitySection,
+    .atmosphereSection,
+    .nextSection {
+        padding: 3rem 0;
+    }
+
+    .panel,
+    .dualityCard,
+    .nextContent,
+    .atmosphereText {
+        padding: 1.5rem;
+    }
+
+    .nextContent h2 {
+        font-size: 2rem;
+    }
 }

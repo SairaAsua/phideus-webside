@@ -1,4 +1,4 @@
-.page {
+﻿.page {
     padding: 4rem 0;
 }
 
@@ -14,16 +14,9 @@
     margin-bottom: 1rem;
 }
 
-.sourceTag {
-    font-size: 0.8rem;
-    color: var(--text-secondary);
-    font-family: var(--font-mono);
-    opacity: 0.6;
-}
-
 .findingsPanel {
     padding: 2.5rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     background: rgba(0, 229, 255, 0.03);
     border-left: 4px solid var(--accent-cyan);
 }
@@ -62,6 +55,26 @@
     color: var(--accent-cyan);
 }
 
+.protocolPanel {
+    padding: 2rem;
+    margin-bottom: 4rem;
+}
+
+.protocolPanel ul {
+    margin: 0;
+    padding-left: 1.25rem;
+}
+
+.protocolPanel li {
+    margin-bottom: 0.5rem;
+}
+
+.protocolNote {
+    margin-top: 1rem;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
 .metricsSection {
     margin-top: 4rem;
     margin-bottom: 4rem;
@@ -78,7 +91,7 @@
 
 .metricsGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 1.5rem;
 }
 
@@ -86,7 +99,6 @@
     margin-top: 4rem;
 }
 
-/* Chronology Timeline */
 .chronologySection {
     margin-bottom: 4rem;
 }
@@ -135,7 +147,6 @@
     font-size: 0.95rem;
 }
 
-/* Visuals Grid */
 .visualsSection {
     margin-bottom: 4rem;
 }
@@ -169,4 +180,24 @@
     font-size: 0.9rem;
     color: var(--text-secondary);
     font-family: var(--font-mono);
+}
+
+@media (max-width: 640px) {
+    .page {
+        padding: 2.5rem 0;
+    }
+
+    .lead {
+        font-size: 1.05rem;
+    }
+
+    .findingsPanel,
+    .protocolPanel {
+        padding: 1.5rem;
+    }
+
+    .visualsGrid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
 }
