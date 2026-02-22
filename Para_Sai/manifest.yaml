@@ -1,0 +1,84 @@
+pack:
+  name: Para_Sai
+  version: 1.0
+  as_of: "2026-02-22"
+  language: "English-first"
+  conceptual_frame: "Harmonic Information Theory"
+  experimental_field: "Cross-modality deep learning"
+  program_duality:
+    - "theoretical_and_empirical_research_track"
+    - "ratio_native_ai_model_development_track"
+  audience:
+    - website_ai_agent
+    - investors
+    - partners
+  style: "executive_with_evidence"
+  visibility: "local_non_versioned_default"
+
+entrypoint:
+  path: "Para_Sai/00_START_HERE_PHIDEUS_WEB_BRIEF.md"
+  purpose: "Primary narrative and data hierarchy for web generation"
+
+documents:
+  - path: "Para_Sai/00_START_HERE_PHIDEUS_WEB_BRIEF.md"
+    priority: 1
+    role: "authoritative_brief"
+  - path: "Para_Sai/01_PROJECT_THESIS_AND_FRAMEWORK.md"
+    priority: 2
+    role: "conceptual_foundation"
+  - path: "Para_Sai/02_TRIPLESCALONETA_ROADMAP_PUBLIC.md"
+    priority: 3
+    role: "roadmap_structure"
+  - path: "Para_Sai/03_ESCALON1_AND_BIAS_CONTROL_EVIDENCE.md"
+    priority: 4
+    role: "evidence_summary"
+  - path: "Para_Sai/04_DESCRIPTOR_TABLE_5EP_COMPLETE.md"
+    priority: 5
+    role: "canonical_5ep_table"
+  - path: "Para_Sai/05_ARCHITECTURE_LINKS_AND_SYSTEM_OVERVIEW.md"
+    priority: 6
+    role: "architecture_links"
+  - path: "Para_Sai/06_VISUAL_ASSETS_INDEX.md"
+    priority: 7
+    role: "visual_asset_registry"
+  - path: "Para_Sai/AGENT_BRIEFING_PROMPT.md"
+    priority: 8
+    role: "generation_guardrails"
+
+source_of_truth_inputs:
+  - "Documents/04_TRANSVERSAL/OVERVIEWS_PDF/PHIDEUS - Overview.docx.pdf"
+  - "Documents/04_TRANSVERSAL/OVERVIEWS_PDF/PHIDEUS - Technical Overview.docx.pdf"
+  - "README.md"
+  - "Documents/04_TRANSVERSAL/TEORIA_Y_FUNDAMENTOS/PHIDEUS_MASTER_BRIEFING.md"
+  - "Documents/04_TRANSVERSAL/TEORIA_Y_FUNDAMENTOS/PHIDEUS_NEURAL_ARCHITECTURES.md"
+  - "Documents/00_TRONCAL/Proyecto_Estado_Actual.md"
+  - "Documents/01_FRENTES_ACTIVOS/BIAS_CONTROL/ROADMAP_BIAS_CONTROL.md"
+  - "Documents/01_FRENTES_ACTIVOS/BIAS_CONTROL/RANKING_DESCRIPTORES_UNIFICADO.md"
+  - "Documents/01_FRENTES_ACTIVOS/BIAS_CONTROL/09_GATE_4_5_LR_SCHEDULE_OPTIMIZATION/README.md"
+  - "Documents/01_FRENTES_ACTIVOS/ESCALON_1/RESULTADOS_ESCALON_1.md"
+  - "Documents/00_TRONCAL/ROADMAP_GENERAL/Rosetta_triplescaloneta.md"
+
+excluded_inputs:
+  - "root_agent_policy_files"
+  - "private_agent_memory_dirs"
+  - "agent_coordination_directories"
+  - "internal_operational_notes"
+  - "handoff_timeline_documents"
+
+assets:
+  backgrounds:
+    - "Para_Sai/assets/backgrounds/HERO_01_drift_frozen.png"
+    - "Para_Sai/assets/backgrounds/HERO_02_bridges_separation.png"
+  figures:
+    - "Para_Sai/assets/figures/fig_umap_multigate.png"
+    - "Para_Sai/assets/figures/fig_heatmaps_multigate.png"
+    - "Para_Sai/assets/figures/fig_similarity_scatter.png"
+    - "Para_Sai/assets/figures/similarity_matrix.png"
+    - "Para_Sai/assets/figures/umap_modality.png"
+    - "Para_Sai/assets/figures/umap_composer.png"
+  stylized:
+    - "Para_Sai/assets/stylized/anim1_bigbang.gif"
+    - "Para_Sai/assets/stylized/anim2_rotation.gif"
+    - "Para_Sai/assets/stylized/anim3_morphing.gif"
+    - "Para_Sai/assets/stylized/fig1_galaxy_umap.png"
+    - "Para_Sai/assets/stylized/fig3_constellation_3d.png"

@@ -1,0 +1,104 @@
+.page {
+    padding: 4rem 0;
+}
+
+.header {
+    margin-bottom: 4rem;
+    max-width: 800px;
+}
+
+.lead {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.sourceTag {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    font-family: var(--font-mono);
+    opacity: 0.6;
+}
+
+.archSection {
+    margin-bottom: 5rem;
+}
+
+.archSection h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: var(--accent-cyan);
+    border-bottom: 1px solid rgba(0, 229, 255, 0.2);
+    padding-bottom: 0.5rem;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.archBlock {
+    padding: 2.5rem;
+    border-left: 4px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.archBlock:hover {
+    border-left-color: var(--accent-cyan);
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.archLink {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.archLink h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.archLink:hover h3 {
+    color: var(--accent-cyan);
+}
+
+.externalIcon {
+    color: var(--text-secondary);
+    font-family: var(--font-mono);
+    font-size: 1.2rem;
+    transition: transform 0.2s;
+}
+
+.archLink:hover .externalIcon {
+    color: var(--accent-cyan);
+    transform: translate(2px, -2px);
+}
+
+.claim {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.claim strong {
+    color: var(--text-secondary);
+}
+
+.metric {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    background: rgba(0, 229, 255, 0.1);
+    color: var(--accent-cyan);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}

@@ -1,0 +1,23 @@
+.badge {
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    font-family: var(--font-mono);
+    margin-left: 0.5rem;
+    vertical-align: middle;
+}
+
+.closed {
+    background-color: rgba(0, 230, 118, 0.15);
+    color: var(--accent-closed);
+    border: 1px solid rgba(0, 230, 118, 0.3);
+}
+
+.pending {
+    background-color: rgba(255, 61, 0, 0.15);
+    color: var(--accent-pending);
+    border: 1px solid rgba(255, 61, 0, 0.3);
+}

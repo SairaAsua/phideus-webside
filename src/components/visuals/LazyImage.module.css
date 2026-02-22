@@ -1,0 +1,24 @@
+.imageContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    /* Assuming rounded corners for most images */
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Change this as needed per use case via className */
+    display: block;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}

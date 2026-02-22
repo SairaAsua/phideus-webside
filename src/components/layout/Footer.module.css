@@ -1,0 +1,22 @@
+.footer {
+    background: #0a0a0c;
+    border-top: 1px solid var(--border-color);
+    padding: 2rem 0;
+    margin-top: 4rem;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stamp {
+    font-family: var(--font-mono);
+}
+
+.stamp strong {
+    color: var(--accent-cyan);
+}
