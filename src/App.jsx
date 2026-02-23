@@ -7,7 +7,7 @@ import './index.css';
 
 function App() {
     return (
-        <Router>
+        <Router basename="/phideus-webside">
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/thesis" element={<Home />} /> {/* Routing thesis back to Home which contains it for now */}

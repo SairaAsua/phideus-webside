@@ -92,27 +92,27 @@ export default function Evidence() {
                     <h2>Scientific Visual Evidence (Class A)</h2>
                     <div className={classes.visualsGrid}>
                         <div className={classes.visualCard}>
-                            <LazyImage src="/Para_Sai/assets/figures/fig_umap_multigate.png" alt="UMAP Multigate Visualization" />
+                            <LazyImage src="/assets/figures/fig_umap_multigate.png" alt="UMAP Multigate Visualization" />
                             <p className={classes.visualCaption}>UMAP Multigate Analysis</p>
                         </div>
                         <div className={classes.visualCard}>
-                            <LazyImage src="/Para_Sai/assets/figures/fig_heatmaps_multigate.png" alt="Heatmaps Multigate" />
+                            <LazyImage src="/assets/figures/fig_heatmaps_multigate.png" alt="Heatmaps Multigate" />
                             <p className={classes.visualCaption}>Multigate Heatmaps</p>
                         </div>
                         <div className={classes.visualCard}>
-                            <LazyImage src="/Para_Sai/assets/figures/fig_similarity_scatter.png" alt="Similarity Scatter" />
+                            <LazyImage src="/assets/figures/fig_similarity_scatter.png" alt="Similarity Scatter" />
                             <p className={classes.visualCaption}>Similarity Scatter Plot</p>
                         </div>
                         <div className={classes.visualCard}>
-                            <LazyImage src="/Para_Sai/assets/figures/similarity_matrix.png" alt="Similarity Matrix" />
+                            <LazyImage src="/assets/figures/similarity_matrix.png" alt="Similarity Matrix" />
                             <p className={classes.visualCaption}>Retrieval Similarity Matrix</p>
                         </div>
                         <div className={classes.visualCard}>
-                            <LazyImage src="/Para_Sai/assets/figures/umap_modality.png" alt="UMAP Modality" />
+                            <LazyImage src="/assets/figures/umap_modality.png" alt="UMAP Modality" />
                             <p className={classes.visualCaption}>Modality Clustering (UMAP)</p>
                         </div>
                         <div className={classes.visualCard}>
-                            <LazyImage src="/Para_Sai/assets/figures/umap_composer.png" alt="UMAP Composer" />
+                            <LazyImage src="/assets/figures/umap_composer.png" alt="UMAP Composer" />
                             <p className={classes.visualCaption}>Composer Separation (UMAP)</p>
                         </div>
                     </div>

@@ -12,7 +12,7 @@ export default function Home() {
         <Layout>
             <section className={classes.hero}>
                 <div className={classes.heroBg}>
-                    <LazyImage src="/Para_Sai/assets/backgrounds/HERO_01_drift_frozen.png" alt="Phideus Diagnostic Turning Point" />
+                    <LazyImage src="/assets/backgrounds/HERO_01_drift_frozen.png" alt="Phideus Diagnostic Turning Point" />
                 </div>
                 <div className={`container ${classes.heroContent}`}>
                     <h1 className={classes.title}>PHIDEUS</h1>
@@ -95,7 +95,7 @@ export default function Home() {
             <section className={classes.atmosphereSection}>
                 <div className={`container ${classes.atmosphereGrid}`}>
                     <div className={classes.atmosphereMedia}>
-                        <LazyImage src="/Para_Sai/assets/stylized/fig1_galaxy_umap.png" alt="Stylized galaxy-style UMAP visual" />
+                        <LazyImage src="/assets/stylized/fig1_galaxy_umap.png" alt="Stylized galaxy-style UMAP visual" />
                     </div>
                     <div className={`glass-panel ${classes.atmosphereText}`}>
                         <h2>Visual Atmosphere Layer</h2>
@@ -109,7 +109,7 @@ export default function Home() {
 
             <section className={classes.nextSection}>
                 <div className={classes.nextBg}>
-                    <LazyImage src="/Para_Sai/assets/backgrounds/HERO_02_bridges_separation.png" alt="Phideus Escalon 2 Separation" />
+                    <LazyImage src="/assets/backgrounds/HERO_02_bridges_separation.png" alt="Phideus Escalon 2 Separation" />
                 </div>
                 <div className={`container ${classes.nextContent}`}>
                     <h2>What Comes Next</h2>
