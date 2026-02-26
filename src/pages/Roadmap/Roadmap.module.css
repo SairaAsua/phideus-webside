@@ -1,190 +1,529 @@
-﻿.page {
-    padding: 4rem 0;
+.page {
+    padding: 4rem 0 6rem;
 }
 
+/* ── Header ── */
 .header {
-    margin-bottom: 4rem;
-    max-width: 800px;
+    margin-bottom: 3rem;
+    max-width: 820px;
+}
+
+.headerTag {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--accent-cyan);
+    opacity: 0.65;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 1.25rem;
+    line-height: 1.1;
 }
 
 .lead {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
+    color: var(--text-secondary);
+    line-height: 1.65;
+    margin-bottom: 0.75rem;
+    max-width: 720px;
+}
+
+.freshness {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+    opacity: 0.55;
+    border-top: 1px solid var(--border-color);
+    padding-top: 0.75rem;
+    margin-top: 1rem;
+}
+
+/* ── Status Banner ── */
+.statusBanner {
+    padding: 2rem 2.5rem;
+    margin-bottom: 4rem;
+    border-left: 4px solid var(--accent-amber, #ffab00);
+    background: rgba(255, 171, 0, 0.03);
+}
+
+.statusBannerInner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.statusBannerText {
+    flex: 1;
+}
+
+.statusPill {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    background: rgba(255, 171, 0, 0.15);
+    color: var(--accent-amber, #ffab00);
+    border: 1px solid rgba(255, 171, 0, 0.35);
+    border-radius: 999px;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.75rem;
+}
+
+.statusTitle {
+    font-size: 1.35rem;
+    margin: 0 0 0.75rem;
+    color: #fff;
+}
+
+.statusBanner p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.statusLinks {
+    flex-shrink: 0;
+}
+
+.statusCta {
+    display: inline-block;
+    padding: 0.65rem 1.25rem;
+    border: 1px solid rgba(0, 229, 255, 0.45);
+    color: var(--accent-cyan);
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    border-radius: 4px;
+    white-space: nowrap;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.statusCta:hover {
+    background: rgba(0, 229, 255, 0.07);
+    border-color: var(--accent-cyan);
+    color: var(--accent-cyan);
+}
+
+/* ── Escalon Section ── */
+.escalonSection {
+    margin-bottom: 5rem;
+}
+
+.sectionLead {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    line-height: 1.65;
+    max-width: 700px;
+    margin-bottom: 2.5rem;
+}
+
+.escalonGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.escalonCard {
+    padding: 2rem;
+}
+
+.escalonActive {
+    border-color: rgba(255, 171, 0, 0.35);
+    background: rgba(255, 171, 0, 0.03);
+}
+
+.escalonPlanned {
+    opacity: 0.75;
+}
+
+.escalonHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.25rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.escalonNumber {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--accent-cyan);
+    opacity: 0.55;
+    display: block;
+    margin-bottom: 0.3rem;
+    letter-spacing: 0.1em;
+}
+
+.escalonHeader h3 {
+    margin: 0 0 0.25rem;
+    font-size: 1.15rem;
+    font-family: var(--font-mono);
+}
+
+.escalonDomain {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    opacity: 0.75;
+}
+
+.badgeActive {
+    display: inline-block;
+    padding: 0.2rem 0.55rem;
+    background: rgba(255, 171, 0, 0.15);
+    color: var(--accent-amber, #ffab00);
+    border: 1px solid rgba(255, 171, 0, 0.35);
+    border-radius: 4px;
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.badgePlanned {
+    display: inline-block;
+    padding: 0.2rem 0.55rem;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-secondary);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.escalonCard p {
+    font-size: 0.95rem;
     color: var(--text-secondary);
     line-height: 1.6;
     margin-bottom: 1rem;
 }
 
+.escalonResult {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding: 0.75rem 1rem;
+    background: rgba(0, 229, 255, 0.05);
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--accent-cyan);
+}
+
+.escalonCondition {
+    font-size: 0.82rem !important;
+    opacity: 0.7;
+    border-top: 1px solid var(--border-color);
+    padding-top: 0.75rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0 !important;
+}
+
+/* ── Gate Timeline ── */
+.gatesSection {
+    margin-bottom: 4rem;
+}
+
 .timeline {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 0.75rem;
     max-width: 900px;
     position: relative;
-    margin-bottom: 4rem;
+    padding-left: 2rem;
 }
 
 .timeline::before {
     content: '';
     position: absolute;
-    left: 24px;
+    left: 0;
     top: 0;
     bottom: 0;
     width: 2px;
     background: var(--border-color);
-    z-index: 0;
 }
 
-.step {
-    padding: 2rem;
-    margin-left: 3rem;
+.gateCard {
+    padding: 1.25rem 1.5rem;
     position: relative;
-    z-index: 1;
 }
 
-.step::before {
+.gateCard::before {
     content: '';
     position: absolute;
     left: -2.5rem;
-    top: 2.5rem;
-    width: 1rem;
-    height: 1rem;
+    top: 1.5rem;
+    width: 0.75rem;
+    height: 0.75rem;
     border-radius: 50%;
     background: var(--bg-color);
     border: 2px solid var(--border-color);
 }
 
-.active::before {
-    border-color: var(--accent-amber);
-    background: var(--accent-amber);
-    box-shadow: 0 0 10px rgba(255, 171, 0, 0.5);
+.gateActive::before {
+    border-color: var(--accent-amber, #ffab00);
+    background: var(--accent-amber, #ffab00);
+    box-shadow: 0 0 8px rgba(255, 171, 0, 0.5);
 }
 
-.stepHeader {
+.gateActive {
+    border-color: rgba(255, 171, 0, 0.25);
+    background: rgba(255, 171, 0, 0.03);
+}
+
+.gateNogo {
+    opacity: 0.65;
+}
+
+.gatePending {
+    border-color: rgba(255, 255, 255, 0.06);
+    opacity: 0.8;
+}
+
+.gateHeader {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.stepHeader h3 {
-    margin: 0;
-    font-family: var(--font-mono);
-    font-size: 1.5rem;
-}
-
-.statusActive {
-    color: var(--accent-amber);
-    font-weight: 700;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-}
-
-.statusPlanned {
-    color: var(--text-secondary);
-    font-weight: 700;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-}
-
-.stepBody p {
     margin-bottom: 0.5rem;
-    color: var(--text-secondary);
-}
-
-.stepBody strong {
-    color: #fff;
-}
-
-.milestonesSection {
-    margin-bottom: 4rem;
-}
-
-.milestonesSection h2 {
-    margin-bottom: 1.5rem;
-}
-
-.milestonesGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 1rem;
 }
 
-.milestoneCard {
-    padding: 1.25rem;
-}
-
-.milestoneTop {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 0.75rem;
-    margin-bottom: 0.75rem;
-}
-
-.milestoneTop h3 {
+.gateHeader h3 {
     margin: 0;
-    font-size: 1rem;
     font-family: var(--font-mono);
+    font-size: 0.95rem;
+    color: #fff;
 }
 
-.milestoneTop span {
-    color: var(--accent-cyan);
-    font-size: 0.75rem;
+.gateCard p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.55;
+}
+
+.gateLabel {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.08em;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
-.milestoneCard p {
+.gateLabelActive { color: var(--accent-amber, #ffab00); }
+.gateLabelNogo { color: var(--accent-pending); }
+.gateLabelPending { color: var(--text-secondary); }
+.gateLabelClosed { color: var(--accent-closed); }
+
+/* ── Priorities ── */
+.prioritiesSection {
+    padding: 2.25rem;
+    margin-bottom: 4rem;
+    max-width: 820px;
+}
+
+.prioritiesSection h2 {
+    margin-bottom: 1.5rem;
+}
+
+.priorityList {
     margin: 0;
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.priorityList li {
     color: var(--text-secondary);
-    font-size: 0.95rem;
+    line-height: 1.6;
+    font-size: 0.97rem;
 }
 
-.priorities {
-    padding: 2rem;
+.priorityList strong {
+    color: #fff;
 }
 
-.priorities ol {
-    margin: 0;
-    padding-left: 1.25rem;
+/* ── Vision ── */
+.visionSection {
+    margin-bottom: 5rem;
+    padding: 3rem;
+    border-left: 4px solid rgba(0, 229, 255, 0.2);
+    background: rgba(255, 255, 255, 0.01);
+    border-radius: 0 8px 8px 0;
+    max-width: 960px;
 }
 
-.priorities li {
+.visionTag {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--accent-cyan);
+    opacity: 0.55;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.visionSection h2 {
+    margin-bottom: 2rem;
+}
+
+.visionGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+}
+
+.visionGrid p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.visionNote {
+    font-style: italic;
+    opacity: 0.85;
+}
+
+/* ── Collaborate ── */
+.collaborateSection {
+    padding: 3rem;
+    border: 1px solid rgba(0, 229, 255, 0.12);
+    border-radius: 8px;
+    background: rgba(0, 229, 255, 0.02);
+}
+
+.collaborateSection h2 {
+    margin-bottom: 1rem;
+    color: var(--accent-cyan);
+}
+
+.collaborateLead {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    line-height: 1.65;
+    max-width: 720px;
+    margin-bottom: 2.5rem;
+}
+
+.collaborateGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.collaborateCard {
+    padding: 1.75rem;
+}
+
+.collaborateCard h3 {
+    font-size: 1rem;
+    color: var(--accent-cyan);
     margin-bottom: 0.75rem;
+}
+
+.collaborateCard p {
+    font-size: 0.92rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.collaborateCta {
+    border-top: 1px solid var(--border-color);
+    padding-top: 1.5rem;
+}
+
+.collaborateCta p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+}
+
+.collaborateLinks {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.collaborateLink {
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+    color: var(--accent-cyan);
+    letter-spacing: 0.04em;
+    transition: opacity 0.2s;
+}
+
+.collaborateLink:hover {
+    opacity: 0.7;
+    color: var(--accent-cyan);
+}
+
+/* ── Responsive ── */
+@media (max-width: 1000px) {
+    .escalonGrid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 900px) {
-    .step {
-        margin-left: 2rem;
-        padding: 1.5rem;
+    .statusBannerInner {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    .timeline::before {
-        left: 16px;
+    .visionGrid,
+    .collaborateGrid {
+        grid-template-columns: 1fr;
     }
 
-    .step::before {
-        left: -1.6rem;
-        top: 2rem;
+    .timeline {
+        padding-left: 1.5rem;
+    }
+
+    .gateCard::before {
+        left: -2rem;
     }
 }
 
 @media (max-width: 640px) {
     .page {
-        padding: 2.5rem 0;
+        padding: 2.5rem 0 4rem;
     }
 
-    .lead {
-        font-size: 1.05rem;
+    .title {
+        font-size: 2.2rem;
     }
 
-    .stepHeader {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
+    .visionSection,
+    .collaborateSection {
+        padding: 1.75rem;
+    }
+
+    .prioritiesSection {
+        padding: 1.5rem;
     }
 }

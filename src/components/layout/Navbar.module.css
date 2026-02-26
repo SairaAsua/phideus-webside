@@ -47,6 +47,35 @@
     color: #fff;
 }
 
+.languageButton {
+    border: 1px solid var(--border-color);
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--text-secondary);
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.45rem 0.7rem;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.languageButton:hover {
+    color: #fff;
+    border-color: var(--accent-cyan);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.activeLanguage {
+    color: #fff;
+}
+
+.inactiveLanguage {
+    opacity: 0.75;
+}
+
 @media (max-width: 900px) {
     .navContainer {
         flex-direction: column;
@@ -57,6 +86,10 @@
         width: 100%;
         gap: 0.8rem 1.25rem;
         justify-content: flex-start;
+    }
+
+    .languageButton {
+        margin-top: 0.25rem;
     }
 }
 

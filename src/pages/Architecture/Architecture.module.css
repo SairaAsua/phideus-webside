@@ -1,104 +1,617 @@
 .page {
-    padding: 4rem 0;
+    padding: 4rem 0 6rem;
 }
 
+/* ── Header ── */
 .header {
     margin-bottom: 4rem;
-    max-width: 800px;
+    max-width: 820px;
+}
+
+.headerTag {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--accent-cyan);
+    opacity: 0.6;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.title {
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-bottom: 1.25rem;
 }
 
 .lead {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     color: var(--text-secondary);
-    line-height: 1.6;
+    line-height: 1.65;
+    margin-bottom: 0.75rem;
+    max-width: 720px;
+}
+
+.freshness {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+    opacity: 0.5;
+}
+
+/* ── Section Titles ── */
+.sectionTitle {
+    font-size: 1.8rem;
     margin-bottom: 1rem;
 }
 
-.sourceTag {
-    font-size: 0.8rem;
+.sectionLead {
+    font-size: 1rem;
     color: var(--text-secondary);
-    font-family: var(--font-mono);
-    opacity: 0.6;
+    line-height: 1.65;
+    max-width: 760px;
+    margin-bottom: 2.5rem;
 }
 
+/* ── System Overview ── */
+.systemOverview {
+    padding: 2.5rem;
+    margin-bottom: 5rem;
+    border-left: 4px solid rgba(0, 229, 255, 0.25);
+}
+
+.overviewTag {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--accent-cyan);
+    opacity: 0.55;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.systemOverview h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.75rem;
+}
+
+.overviewGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+.overviewGrid h3 {
+    font-size: 0.95rem;
+    color: var(--accent-cyan);
+    margin: 1.25rem 0 0.5rem;
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 0.72rem;
+    opacity: 0.7;
+}
+
+.overviewGrid h3:first-child {
+    margin-top: 0;
+}
+
+.overviewGrid p {
+    font-size: 0.93rem;
+    color: var(--text-secondary);
+    line-height: 1.65;
+    margin: 0 0 0.5rem;
+}
+
+.metricsRow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.8rem;
+}
+
+/* ── Mechanism Section ── */
+.mechSection {
+    margin-bottom: 5rem;
+}
+
+.mechGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+}
+
+.mechCard {
+    padding: 1.75rem;
+}
+
+.mechProduction {
+    border-color: rgba(0, 229, 255, 0.2);
+    background: rgba(0, 229, 255, 0.02);
+}
+
+.mechHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.75rem;
+}
+
+.mechTag {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--accent-cyan);
+    opacity: 0.6;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.mechBadge {
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.15rem 0.45rem;
+    border-radius: 3px;
+    font-weight: 700;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.badgeProduction {
+    background: rgba(0, 229, 255, 0.1);
+    color: var(--accent-cyan);
+    border: 1px solid rgba(0, 229, 255, 0.25);
+}
+
+.badgeScreened {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-secondary);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.badgeHistorical {
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--text-secondary);
+    opacity: 0.7;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.badgeNogo {
+    background: rgba(255, 61, 0, 0.1);
+    color: var(--accent-pending, #ff6d00);
+    border: 1px solid rgba(255, 61, 0, 0.25);
+}
+
+.mechName {
+    font-size: 1.05rem;
+    margin-bottom: 0.65rem;
+    color: #fff;
+}
+
+.mechDesc {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.65;
+    margin-bottom: 1rem;
+}
+
+.mechBlock {
+    margin-bottom: 0.85rem;
+}
+
+.mechBlockLabel {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-secondary);
+    opacity: 0.55;
+    margin-bottom: 0.3rem;
+}
+
+.mechBlock p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.mechResult {
+    color: var(--accent-cyan) !important;
+    font-family: var(--font-mono);
+    font-size: 0.8rem !important;
+}
+
+.mechFinding {
+    padding: 0.75rem 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 2px solid rgba(0, 229, 255, 0.15);
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+    line-height: 1.55;
+    border-radius: 0 4px 4px 0;
+    font-style: italic;
+}
+
+/* ── Architecture Sections ── */
 .archSection {
     margin-bottom: 5rem;
 }
 
-.archSection h2 {
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
-    color: var(--accent-cyan);
-    border-bottom: 1px solid rgba(0, 229, 255, 0.2);
-    padding-bottom: 0.5rem;
-}
-
-.list {
+/* ── Walkthrough List ── */
+.walkthroughList {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.25rem;
 }
 
-.archBlock {
-    padding: 2.5rem;
-    border-left: 4px solid rgba(255, 255, 255, 0.1);
-    transition: all 0.3s ease;
-}
-
-.archBlock:hover {
-    border-left-color: var(--accent-cyan);
-    background: rgba(255, 255, 255, 0.03);
-}
-
-.archLink {
-    text-decoration: none;
-    color: #fff;
-    display: inline-block;
-    margin-bottom: 1rem;
-}
-
-.archLink h3 {
-    margin: 0;
-    font-size: 1.4rem;
-    font-weight: 500;
+.walkthroughCard {
     display: flex;
-    align-items: center;
-    gap: 0.5rem;
+    gap: 2rem;
+    padding: 2rem;
+    border-left: 4px solid rgba(255, 255, 255, 0.06);
+    transition: border-color 0.2s;
 }
 
-.archLink:hover h3 {
+.walkthroughCard:hover {
+    border-left-color: rgba(0, 229, 255, 0.3);
+}
+
+.walkthroughIndex {
+    font-family: var(--font-mono);
+    font-size: 1.5rem;
+    color: var(--accent-cyan);
+    opacity: 0.2;
+    flex-shrink: 0;
+    width: 2rem;
+    line-height: 1;
+    padding-top: 0.1rem;
+}
+
+.walkthroughBody {
+    flex: 1;
+    min-width: 0;
+}
+
+.walkthroughHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.walkthroughTag {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--accent-cyan);
+    opacity: 0.55;
+    margin-bottom: 0.35rem;
+}
+
+.walkthroughLink {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.walkthroughLink:hover {
     color: var(--accent-cyan);
 }
 
 .externalIcon {
-    color: var(--text-secondary);
     font-family: var(--font-mono);
-    font-size: 1.2rem;
-    transition: transform 0.2s;
+    font-size: 0.9em;
+    color: var(--text-secondary);
+    opacity: 0.5;
+    transition: opacity 0.2s, transform 0.2s;
 }
 
-.archLink:hover .externalIcon {
+.viewGraphicText {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-secondary);
+    opacity: 0.6;
+    transition: color 0.2s, opacity 0.2s;
+    font-weight: 500;
+}
+
+.walkthroughLink:hover .externalIcon {
+    opacity: 1;
     color: var(--accent-cyan);
     transform: translate(2px, -2px);
 }
 
-.claim {
-    font-size: 1.1rem;
-    color: var(--text-primary);
-    line-height: 1.6;
-    margin-bottom: 1rem;
+.walkthroughLink:hover .viewGraphicText {
+    color: var(--accent-cyan);
+    opacity: 1;
 }
 
-.claim strong {
+.walkthroughUrl {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
     color: var(--text-secondary);
+    opacity: 0.4;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
-.metric {
+.walkthroughContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.contentLabel {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-secondary);
+    opacity: 0.5;
+    margin-bottom: 0.4rem;
+}
+
+.walkthroughContent p {
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.walkthroughFooter {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.metricChip {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--accent-cyan);
+    background: rgba(0, 229, 255, 0.06);
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    display: inline-block;
+    align-self: flex-start;
+}
+
+.resultNote {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--text-secondary);
+    opacity: 0.6;
+}
+
+/* ── History List ── */
+.historyList {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.historyCard {
+    padding: 2rem;
+    border-left: 4px solid rgba(255, 255, 255, 0.06);
+    opacity: 0.9;
+}
+
+.historyNogo {
+    border-left-color: rgba(255, 61, 0, 0.25);
+    background: rgba(255, 61, 0, 0.02);
+    opacity: 1;
+}
+
+.historyHeader {
+    margin-bottom: 1.25rem;
+}
+
+.historyBadge {
     display: inline-block;
     font-family: var(--font-mono);
-    font-size: 0.9rem;
-    background: rgba(0, 229, 255, 0.1);
+    font-size: 0.62rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.15rem 0.45rem;
+    border-radius: 3px;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.historyContent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.historyBlock p {
+    font-size: 0.87rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.historyLesson {
+    padding: 1rem 1.25rem;
+    background: rgba(0, 229, 255, 0.03);
+    border-left: 3px solid rgba(0, 229, 255, 0.2);
+    border-radius: 0 4px 4px 0;
+}
+
+.lessonLabel {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
     color: var(--accent-cyan);
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
+    opacity: 0.55;
+    margin-bottom: 0.4rem;
+}
+
+.historyLesson p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.65;
+    margin: 0;
+    font-style: italic;
+}
+
+/* ── Connect Section ── */
+.connectSection {
+    padding: 3rem;
+    border-left: 4px solid rgba(0, 229, 255, 0.2);
+    margin-bottom: 3rem;
+}
+
+.connectTag {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--accent-cyan);
+    opacity: 0.55;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.connectSection h2 {
+    margin-bottom: 2rem;
+}
+
+.connectGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
+.connectGrid p {
+    font-size: 0.97rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 0.85rem;
+}
+
+.connectGrid p:last-child {
+    margin-bottom: 0;
+}
+
+.connectLinks {
+    display: flex;
+    gap: 2rem;
+    border-top: 1px solid var(--border-color);
+    padding-top: 1.5rem;
+}
+
+.connectLink {
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+    color: var(--accent-cyan);
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.connectLink:hover {
+    opacity: 0.7;
+    color: var(--accent-cyan);
+}
+
+/* ── Footer ── */
+.footerFreshness {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--text-secondary);
+    opacity: 0.4;
+    margin: 0;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1100px) {
+    .historyContent {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 900px) {
+    .title {
+        font-size: 2.2rem;
+    }
+
+    .overviewGrid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .mechGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .metricsRow {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .walkthroughCard {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .walkthroughHeader {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .walkthroughContent {
+        grid-template-columns: 1fr;
+    }
+
+    .historyContent {
+        grid-template-columns: 1fr;
+    }
+
+    .connectGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .connectSection {
+        padding: 1.75rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .page {
+        padding: 2.5rem 0 4rem;
+    }
+
+    .title {
+        font-size: 1.75rem;
+    }
+
+    .metricsRow {
+        grid-template-columns: 1fr;
+    }
+
+    .walkthroughUrl {
+        display: none;
+    }
 }

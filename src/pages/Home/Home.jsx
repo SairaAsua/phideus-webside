@@ -1,128 +1,288 @@
 ﻿import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Layout from '../../components/layout/Layout';
-import LazyImage from '../../components/visuals/LazyImage';
+import FigureCard from '../../components/visuals/FigureCard';
+import ScientificFindings from '../../components/visuals/ScientificFindings';
 import classes from './Home.module.css';
 
 export default function Home() {
     useEffect(() => {
-        document.title = 'Phideus | Harmonic Information Theory';
+        document.title = 'Phideus | Intelligence Native to Proportions';
     }, []);
 
     return (
         <Layout>
+
+            {/* ── 1. HERO ── */}
             <section className={classes.hero}>
-                <div className={classes.heroBg}>
-                    <LazyImage src="/assets/backgrounds/HERO_01_drift_frozen.png" alt="Phideus Diagnostic Turning Point" />
-                </div>
                 <div className={`container ${classes.heroContent}`}>
                     <h1 className={classes.title}>PHIDEUS</h1>
                     <p className={classes.subtitle}>
-                        A long-horizon program exploring whether frequency-ratio structure can operate as a portable information domain across heterogeneous signals.
+                        Intelligence native to proportions.
                     </p>
-                </div>
-            </section>
-
-            <section className={classes.whySection}>
-                <div className="container">
-                    <div className={classes.whyContainer}>
-                        <h2>Why Ratios Matter</h2>
-                        <p className={classes.whyText}>
-                            If ratio-structured representations transfer reliably across modalities, the same modeling principles can scale from music to speech and biosignals.
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <section className={classes.thesisSection}>
-                <div className="container">
-                    <h2>Project Thesis</h2>
-                    <div className={`glass-panel ${classes.panel}`}>
-                        <p className={classes.thesisText}>
-                            Phideus is framed by <strong>Harmonic Information Theory (HIT)</strong> and studies whether ratio-based relational structure can serve as an information layer that transfers across modalities, not just inside one sensor type.
-                        </p>
-                        <p className={classes.thesisNote}>
-                            Cross-modality deep learning is the <em>operational experiment field</em>, not the conceptual endpoint.
-                        </p>
-
-                        <div className={classes.hypothesisGrid}>
-                            <div className={classes.hypothesisCard}>
-                                <h4>H1 - Structure</h4>
-                                <p>Real signals contain non-random ratio structure</p>
-                                <div className={classes.statusValidated}>Validated</div>
-                            </div>
-                            <div className={classes.hypothesisCard}>
-                                <h4>H2 - Learnability</h4>
-                                <p>Neural systems can learn compact ratio-informed representations</p>
-                                <div className={classes.statusValidated}>Validated</div>
-                            </div>
-                            <div className={classes.hypothesisCard}>
-                                <h4>H3 - Cross-modality</h4>
-                                <p>Ratio structure supports transfer across modalities</p>
-                                <div className={classes.statusActive}>In progress (Escalon 1)</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section className={classes.dualitySection}>
-                <div className="container">
-                    <h2>Program Duality: Two Simultaneous Paths</h2>
-                    <p className={classes.thesisText}>
-                        Phideus is intentionally built as a double path. Both paths are coupled: theory defines what to test, and model behavior provides the evidence loop.
+                    <p className={classes.subtitleSecondary}>
+                        We investigate whether frequency ratios can act as a transferable information
+                        language across domains — and we build AI where ratios guide attention and representation.
                     </p>
-                    <div className={classes.dualityGrid}>
-                        <div className={`glass-panel ${classes.dualityCard}`}>
-                            <h3>1. Research Path</h3>
-                            <div className={classes.dualityTag}>Theoretical + Empirical</div>
-                            <ul>
-                                <li>Explore whether ratios carry reusable structure</li>
-                                <li>Test that claim across modalities with controlled experiments</li>
-                            </ul>
+                    <div className={classes.heroCtas}>
+                        <a href="#measured-results" className={classes.ctaPrimary}>See measured results</a>
+                        <a href="#the-thesis" className={classes.ctaGhost}>Read the vision</a>
+                        <Link to="/architecture" className={classes.ctaGhost}>Technical docs</Link>
+                        {/* Replace href with actual repo URL when available */}
+                        <a href="#" className={classes.ctaGhost}>Main repo</a>
+                    </div>
+                </div>
+            </section>
+
+            {/* ── 2. THE PROBLEM ── */}
+            <section className={classes.challengeSection}>
+                <div className="container">
+                    <div className={classes.challengeGrid}>
+                        <div className={classes.challengeText}>
+                            <span className={classes.challengeLabel}>why this exists</span>
+                            <h2>The Problem</h2>
+                            <p>
+                                Most AI learns from surfaces — tokens, labels, pixel values. It excels when there
+                                is abundant labelled data from a single domain. But it struggles when you ask it
+                                to transfer knowledge between sensor types, or when labelled data is scarce.
+                            </p>
+                            <p>
+                                PHIDEUS tests a different path: <strong>learning by relationships</strong>.
+                                If the structure that matters in oscillatory systems is encoded in ratios
+                                (proportions between components), not in absolute values, then building AI
+                                that natively reads ratios could yield stronger transfer and better efficiency.
+                            </p>
+                            <p className={classes.challengeNote}>
+                                Current benchmark: audio waveforms ↔ MIDI note sequences on MAESTRO.
+                                Same musical content, completely different mathematical spaces.
+                            </p>
                         </div>
-                        <div className={`glass-panel ${classes.dualityCard}`}>
-                            <h3>2. AI Model Path</h3>
-                            <div className={classes.dualityTag}>Engineering + Capability</div>
-                            <ul>
-                                <li>Design and train models that learn and operate with ratio logic</li>
-                                <li>Move toward ratio-native representations and decision behavior</li>
-                            </ul>
+                        <div>
+                            <FigureCard
+                                isAnim
+                                src="/assets/evidence/gate5b/animations/anim1_morphing_evolution.gif"
+                                alt="Cross-modal morphing evolution animation"
+                                caption="Ratio structure emerging across audio and MIDI domains."
+                            />
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section className={classes.atmosphereSection}>
-                <div className={`container ${classes.atmosphereGrid}`}>
-                    <div className={classes.atmosphereMedia}>
-                        <LazyImage src="/assets/stylized/fig1_galaxy_umap.png" alt="Stylized galaxy-style UMAP visual" />
-                    </div>
-                    <div className={`glass-panel ${classes.atmosphereText}`}>
-                        <h2>Visual Atmosphere Layer</h2>
+            {/* ── 3. THE THESIS ── */}
+            <section id="the-thesis" className={classes.hitSection}>
+                <div className="container">
+                    <div className={classes.hitContainer}>
+                        <span className={classes.hypothesisBadge}>Research hypothesis</span>
+                        <h2>The Thesis: Ratios as a Shared Language</h2>
                         <p>
-                            Stylized visuals are used as narrative support and attention layer while evidence claims remain tied to Class A scientific figures.
+                            A frequency ratio is scale-invariant. The relationship 3:2 is the same whether
+                            it occurs between 300 Hz and 200 Hz, or between 1,500 Hz and 1,000 Hz — the
+                            proportion is identical, only the absolute values differ. This is the same
+                            principle behind Weber's Law in perception: the nervous system responds to
+                            relative differences, not absolute magnitudes.
                         </p>
-                        <p className={classes.atmosphereNote}>Decorative asset (non-evidentiary).</p>
+                        <p>
+                            <strong>Harmonic Information Theory (HIT)</strong> proposes that part of the
+                            structure in oscillatory systems — music, speech, biosignals — can be expressed
+                            as distributions of ratios, and that this ratio-based structure may be
+                            transferable across domains that share it.
+                        </p>
+                        <p className={classes.hitNote}>
+                            This is a research hypothesis under active investigation, not an established
+                            result. Cross-modal deep learning is the experimental field where we test it.
+                        </p>
+                        <Link to="/evidence" className={classes.hitLink}>
+                            {'-> See current evidence (Gate 5B)'}
+                        </Link>
                     </div>
                 </div>
             </section>
 
-            <section className={classes.nextSection}>
-                <div className={classes.nextBg}>
-                    <LazyImage src="/assets/backgrounds/HERO_02_bridges_separation.png" alt="Phideus Escalon 2 Separation" />
-                </div>
-                <div className={`container ${classes.nextContent}`}>
-                    <h2>What Comes Next</h2>
-                    <p className={classes.lead}>Investor and Partner Roadmap</p>
-                    <ol className={classes.nextList}>
-                        <li>Close Gate 4.5 pending runs for full scheduler-controlled comparison.</li>
-                        <li>Enter Gate 5A (descriptor x mechanism sweep) with stronger causal confidence.</li>
-                        <li>Build Gate 5B showcase package (13-test scientific validation bundle).</li>
-                        <li>Prepare Escalon 2 launch criteria once Escalon 1 closure thresholds are met.</li>
-                        <li>Keep both tracks synchronized: advance HIT evidence and ratio-native model capability together.</li>
-                    </ol>
+            {/* ── 4. THE DOUBLE EXPLORATION ── */}
+            <section className={classes.explorationSection}>
+                <div className="container">
+                    <h2>Two Simultaneous Explorations</h2>
+                    <p className={classes.explorationIntro}>
+                        PHIDEUS runs as a feedback loop between two lines of work. Each informs the other.
+                    </p>
+                    <div className={classes.explorationGrid}>
+                        <div className={`glass-panel ${classes.explorationCard}`}>
+                            <span className={classes.explorationTag}>Loop A — Science</span>
+                            <h3>Harmonic Information Theory as operational hypothesis</h3>
+                            <p>
+                                We use AI model behavior as a scientific probe. If injecting ratio descriptors
+                                consistently improves cross-domain alignment — in controlled conditions, across
+                                multiple runs — that is empirical evidence that ratio structure carries
+                                transferable information.
+                            </p>
+                            <p className={classes.explorationNote}>
+                                Scale-invariance as a general principle, and generalization beyond the current
+                                benchmark, remain open research questions.
+                            </p>
+                        </div>
+                        <div className={`glass-panel ${classes.explorationCard}`}>
+                            <span className={classes.explorationTag}>Loop B — Engineering</span>
+                            <h3>Building proportion-guided attention</h3>
+                            <p>
+                                We build models where ratio descriptors do not decorate the architecture as
+                                an add-on feature. Instead, they guide the attention logic — defining how
+                                the model organizes relationships between extracted features.
+                                Then we measure efficiency, retrieval quality, and alignment.
+                            </p>
+                            <p className={classes.explorationNote}>
+                                Results are measured on the current benchmark and closed experimental arms only.
+                            </p>
+                        </div>
+                    </div>
+                    <blockquote className={classes.bridgeSentence}>
+                        We&apos;re not adding ratios as &ldquo;one more feature&rdquo;. We&apos;re testing
+                        ratios as an organizing principle for attention and representation.
+                    </blockquote>
                 </div>
             </section>
+
+            {/* ── 5. KEY MECHANISM ── */}
+            <section className={classes.mechanismSection}>
+                <div className="container">
+                    <div className={classes.mechanismContainer}>
+                        <span className={classes.challengeLabel}>key mechanism</span>
+                        <h2>Reverse Cross-Attention</h2>
+                        <p className={classes.mechanismText}>
+                            In standard Transformer cross-attention, every extracted feature searches for
+                            relationships with every other feature — O(n²) operations across all cross-modal
+                            combinations. In Reverse Cross-Attention, ratio descriptor tokens act as
+                            the <em>query</em> side: they define which cross-modal relationships get
+                            explored, dramatically reducing the search space.
+                        </p>
+                        <p className={classes.mechanismText}>
+                            Implementation details, sequence length analysis, and test results are in the
+                            technical documentation.
+                        </p>
+                        <div className={classes.mechanismLinks}>
+                            <Link to="/architecture" className={classes.hitLink}>
+                                {'-> Technical docs'}
+                            </Link>
+                            <Link to="/evidence" className={classes.hitLink}>
+                                {'-> Evidence (Gate 5B)'}
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* ── 6. MEASURED RESULTS ── */}
+            <section id="measured-results" className={classes.claimsSection}>
+                <div className="container">
+                    <span className={classes.measuredBadge}>Measured observations</span>
+                    <h2>What We Have Measured</h2>
+                    <p className={classes.claimsIntro}>
+                        Four claims from the current benchmark (MAESTRO Audio↔MIDI, Gate 5B closed suite).
+                        Each includes a test reference, cut date, and evidence path.
+                        Scope is limited to the current setup and closed experimental arms.
+                    </p>
+
+                    <div className={classes.claimsGrid}>
+
+                        {/* Claim 1 — 163x */}
+                        <div className={`glass-panel ${classes.claimCard}`}>
+                            <div className={classes.claimValue}>~163×</div>
+                            <div className={classes.claimMeaning}>
+                                fewer attention operations in the current architecture setup
+                            </div>
+                            <div className={classes.claimFootnote}>
+                                <span className={classes.claimScope}>
+                                    Measured / derived from architecture token lengths — not a universal law.
+                                </span>
+                                <span>Artifact: 02_PHIDEUS_NEURAL_ARCHITECTURES.md (sequence lengths: audio 2400 frames vs descriptor tokens)</span>
+                                <span>Cut: 2026-02-25</span>
+                            </div>
+                            <Link to="/architecture" className={classes.claimLink}>
+                                View methodology →
+                            </Link>
+                        </div>
+
+                        {/* Claim 2 — Compute savings (safe wording; update to "Up to ~2.6×" once profiling artifact is published in Docs/Main Repo) */}
+                        <div className={`glass-panel ${classes.claimCard}`}>
+                            <div className={classes.claimValue}>Shorter sequences</div>
+                            <div className={classes.claimMeaning}>
+                                significant compute savings from shorter descriptor sequences
+                            </div>
+                            <div className={classes.claimFootnote}>
+                                <span className={classes.claimScope}>
+                                    Observed in current setup. A verified profiling artifact will be linked here once published in Docs/Main Repo.
+                                </span>
+                                <span>Cut: 2026-02-25</span>
+                            </div>
+                            <Link to="/architecture" className={classes.claimLink}>
+                                View docs →
+                            </Link>
+                        </div>
+
+                        {/* Claim 3 — +10.4pp */}
+                        <div className={`glass-panel ${classes.claimCard}`}>
+                            <div className={classes.claimValue}>+10.4 pp</div>
+                            <div className={classes.claimMeaning}>
+                                bidirectional cross-domain retrieval — 73.4% → 83.8% (D0 → d4a4)
+                            </div>
+                            <div className={classes.claimFootnote}>
+                                <span className={classes.claimScope}>
+                                    Measured on current benchmark + current closed arms only.
+                                </span>
+                                <span>Test12 · Gate 5B · Cut: 2026-02-25</span>
+                                <span>data/gate5b_results/scoreboard.json</span>
+                                <span>Benchmark: MAESTRO Audio↔MIDI. See Docs/Repo for methodology.</span>
+                            </div>
+                            <Link to="/evidence" className={classes.claimLink}>
+                                View evidence →
+                            </Link>
+                        </div>
+
+                        {/* Claim 4 — +82% CKA */}
+                        <div className={`glass-panel ${classes.claimCard}`}>
+                            <div className={classes.claimValue}>up to +82%</div>
+                            <div className={classes.claimMeaning}>
+                                representational alignment between domains (CKA metric)
+                            </div>
+                            <div className={classes.claimFootnote}>
+                                <span className={classes.claimScope}>
+                                    Measured on current closed suite. CKA measures geometric similarity
+                                    between domain representations — higher means more aligned.
+                                </span>
+                                <span>Test06 (RSA/CKA) · Gate 5B · Cut: 2026-02-25</span>
+                                <span>Documents/01_FRENTES_ACTIVOS/BIAS_CONTROL/11_GATE_5_LINEA_B_SHOWCASE/README.md</span>
+                            </div>
+                            <Link to="/evidence" className={classes.claimLink}>
+                                View evidence →
+                            </Link>
+                        </div>
+
+                    </div>
+
+                    <div className={classes.claimsSummaryFigure}>
+                        <FigureCard
+                            src="/assets/evidence/gate5b/summary/chart08_summary_dashboard.png"
+                            alt="Gate 5B Summary Dashboard"
+                            caption="Gate 5B executive summary — all evidence layers consolidated. Cut: 2026-02-25."
+                        />
+                    </div>
+
+                    <div className={classes.hypothesisSeparator}>
+                        <span className={classes.hypothesisBadge}>Research hypotheses — under investigation</span>
+                        <p className={classes.hypothesisText}>
+                            Scale-invariance as a general principle across domains beyond MAESTRO,
+                            generalization to speech and biosignals, and expansion to other sensor types
+                            are research directions currently open. They are not claimed as results.
+                        </p>
+                    </div>
+
+                    <p className={classes.freshness}>Data as of 2026-02-25</p>
+                </div>
+            </section>
+
+            {/* ── 7. SCIENTIFIC FINDINGS ── */}
+            <ScientificFindings />
+
         </Layout>
     );
 }

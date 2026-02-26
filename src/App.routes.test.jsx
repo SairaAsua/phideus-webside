@@ -6,7 +6,8 @@ describe('App routes', () => {
         { path: '/', text: /project thesis/i },
         { path: '/thesis', text: /project thesis/i },
         { path: '/roadmap', text: /triplescaloneta roadmap/i },
-        { path: '/evidence', text: /escalon 1 evidence/i },
+        { path: '/evidence', text: /gate 5b evidence/i },
+        { path: '/evidence/test-12', text: /performance scoreboard/i },
         { path: '/architecture', text: /architecture explorer/i },
     ];
 
@@ -16,4 +17,3 @@ describe('App routes', () => {
         expect(screen.getByText(text)).toBeInTheDocument();
     });
 });
-

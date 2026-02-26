@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    base: '/phideus-webside/', // Match repository name for GitHub Pages deployment
+    base: '/', // Root deployment (Hostinger). For GitHub Pages subcfolder use '/phideus-webside/'
     plugins: [react()],
     test: {
         globals: true,
