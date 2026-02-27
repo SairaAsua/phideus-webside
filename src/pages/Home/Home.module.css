@@ -432,6 +432,17 @@
     justify-content: center;
 }
 
+.mechanismMediaFull {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.mechanismMediaFull :global(.figure-card) {
+    width: 100%;
+    margin-bottom: 0;
+}
+
 .challengeLabel {
     font-family: var(--font-mono);
     font-size: 0.72rem;

@@ -2,8 +2,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import Roadmap from './pages/Roadmap/Roadmap';
 import Evidence from './pages/Evidence/Evidence';
-import EvidenceTest from './pages/EvidenceTest/EvidenceTest';
 import Architecture from './pages/Architecture/Architecture';
+import Institutional from './pages/Institutional/Institutional';
 import { LanguageProvider } from './context/LanguageContext';
 import './index.css';
 
@@ -23,8 +23,8 @@ function App() {
                     <Route path="/thesis" element={<Home />} />
                     <Route path="/roadmap" element={<Roadmap />} />
                     <Route path="/evidence" element={<Evidence />} />
-                    <Route path="/evidence/:testId" element={<EvidenceTest />} />
                     <Route path="/architecture" element={<Architecture />} />
+                    <Route path="/institutional" element={<Institutional />} />
                 </Routes>
             </Router>
         </LanguageProvider>

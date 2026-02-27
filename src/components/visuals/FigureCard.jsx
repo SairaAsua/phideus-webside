@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import classes from './FigureCard.module.css';
 
-export default function FigureCard({ src, alt, caption, isAnim = false }) {
+export default function FigureCard({ src, alt, caption, isAnim = false, unmasked = false }) {
     const [loaded, setLoaded] = useState(false);
     const [open, setOpen] = useState(false);
 
@@ -27,7 +27,7 @@ export default function FigureCard({ src, alt, caption, isAnim = false }) {
                 tabIndex={0}
                 aria-label={`Expand: ${alt}`}
             >
-                <div className={classes.imgWrap}>
+                <div className={`${classes.imgWrap} ${unmasked ? classes.unmasked : ''}`}>
                     <img
                         src={resolvedSrc}
                         alt={alt}

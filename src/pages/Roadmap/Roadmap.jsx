@@ -25,17 +25,12 @@ export default function Roadmap() {
 
                 {/* ── HERO ── */}
                 <header className={classes.header}>
-                    <span className={classes.headerTag}>TripleScaloneta</span>
-                    <h1 className={classes.title}>The Ladder to Planetary Intelligence</h1>
+                    <span className={classes.headerTag}>Roadmap</span>
+                    <h1 className={classes.title}>The TripleScaloneta</h1>
                     <p className={classes.lead}>
                         One central question. Three domains. A staged scientific ladder designed to find out
                         how far ratio-based representation can travel across the physical world.
                     </p>
-                    <p className={classes.lead}>
-                        We are not rushing. We are building something that works — and works for reasons
-                        we understand. Every gate closes with evidence, not with optimism.
-                    </p>
-                    <p className={classes.freshness}>Data as of 2026-02-25</p>
                 </header>
 
                 {/* ── WHERE WE ARE ── */}
@@ -147,20 +142,18 @@ export default function Roadmap() {
                         {gates.map((g) => (
                             <div
                                 key={g.stage}
-                                className={`glass-panel ${classes.gateCard} ${
-                                    g.status === 'active' ? classes.gateActive :
+                                className={`glass-panel ${classes.gateCard} ${g.status === 'active' ? classes.gateActive :
                                     g.status === 'nogo' ? classes.gateNogo :
-                                    g.status === 'pending' ? classes.gatePending : ''
-                                }`}
+                                        g.status === 'pending' ? classes.gatePending : ''
+                                    }`}
                             >
                                 <div className={classes.gateHeader}>
                                     <h3>{g.stage}</h3>
-                                    <span className={`${classes.gateLabel} ${
-                                        g.status === 'active' ? classes.gateLabelActive :
+                                    <span className={`${classes.gateLabel} ${g.status === 'active' ? classes.gateLabelActive :
                                         g.status === 'nogo' ? classes.gateLabelNogo :
-                                        g.status === 'pending' ? classes.gateLabelPending :
-                                        classes.gateLabelClosed
-                                    }`}>{g.label}</span>
+                                            g.status === 'pending' ? classes.gateLabelPending :
+                                                classes.gateLabelClosed
+                                        }`}>{g.label}</span>
                                 </div>
                                 <p>{g.message}</p>
                             </div>
@@ -226,51 +219,7 @@ export default function Roadmap() {
                     </div>
                 </section>
 
-                {/* ── COLLABORATE ── */}
-                <section className={classes.collaborateSection}>
-                    <h2>Be Part of This</h2>
-                    <p className={classes.collaborateLead}>
-                        PHIDEUS is an open research program. The scientific questions are genuinely open.
-                        The architecture decisions are empirically driven. The next escalons will require
-                        people with different skills, different domains, and different ways of seeing.
-                    </p>
-                    <div className={classes.collaborateGrid}>
-                        <div className={`glass-panel ${classes.collaborateCard}`}>
-                            <h3>Researchers</h3>
-                            <p>
-                                If you work in signal processing, self-supervised learning, cross-modal
-                                representation, or auditory neuroscience — the HIT hypotheses are
-                                scientifically interesting and still open. Escalon 2 and 3 will need domain
-                                expertise in speech, EGG, ECG, and biosignal processing.
-                            </p>
-                        </div>
-                        <div className={`glass-panel ${classes.collaborateCard}`}>
-                            <h3>Engineers</h3>
-                            <p>
-                                We are actively building ratio-native model components. Injection mechanism
-                                design, efficiency optimization, descriptor architecture — these are open
-                                engineering problems with measured outcomes and reproducible benchmarks.
-                            </p>
-                        </div>
-                        <div className={`glass-panel ${classes.collaborateCard}`}>
-                            <h3>Partners</h3>
-                            <p>
-                                Organizations working on environmental monitoring, biomedical sensing, or
-                                any domain where cross-modal signal alignment matters — Escalon 3 and beyond
-                                are designed to generalize to your domain.
-                            </p>
-                        </div>
-                    </div>
-                    <div className={classes.collaborateCta}>
-                        <p>Follow the evidence as it is published:</p>
-                        <div className={classes.collaborateLinks}>
-                            <Link to="/evidence" className={classes.collaborateLink}>Evidence page</Link>
-                            <Link to="/architecture" className={classes.collaborateLink}>Technical docs</Link>
-                            <a href="https://github.com/altermundi/Phideus" target="_blank" rel="noopener noreferrer" className={classes.collaborateLink}>Main repo ↗</a>
-                        </div>
-                    </div>
-                </section>
-
+                {/* ── FOOTER COLLABORATION / INSTITUTIONAL MOVED ── */}
             </div>
         </Layout>
     );

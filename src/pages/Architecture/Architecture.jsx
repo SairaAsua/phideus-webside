@@ -154,7 +154,6 @@ export default function Architecture() {
                         Every architecture decision in the experimental stack was made for a reason,
                         and every path that failed taught something the current architecture uses.
                     </p>
-                    <p className={classes.freshness}>Data as of 2026-02-25</p>
                 </header>
 
                 {/* ── SYSTEM OVERVIEW ── */}
@@ -373,7 +372,7 @@ export default function Architecture() {
                     </div>
                 </section>
 
-                <p className={classes.footerFreshness}>Data as of 2026-02-25 · Gate 5B · Escalon 1 · Architecture index</p>
+
 
             </div>
         </Layout>

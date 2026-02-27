@@ -8,7 +8,8 @@ export default function Navbar() {
         home: language === 'es' ? 'Inicio / Tesis' : 'Home / Thesis',
         roadmap: language === 'es' ? 'Hoja de ruta' : 'Roadmap',
         evidence: language === 'es' ? 'Evidencia' : 'Evidence',
-        architecture: language === 'es' ? 'Arquitectura' : 'Architecture'
+        architecture: language === 'es' ? 'Arquitectura' : 'Architecture',
+        institutional: language === 'es' ? 'Institucional' : 'Institutional'
     };
 
     return (
@@ -22,6 +23,7 @@ export default function Navbar() {
                     <Link to="/roadmap">{labels.roadmap}</Link>
                     <Link to="/evidence">{labels.evidence}</Link>
                     <Link to="/architecture">{labels.architecture}</Link>
+                    <Link to="/institutional">{labels.institutional}</Link>
                 </div>
                 <button
                     type="button"

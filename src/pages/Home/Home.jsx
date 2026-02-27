@@ -169,11 +169,10 @@ export default function Home() {
                                 </Link>
                             </div>
                         </div>
-                        <div className={classes.mechanismMedia}>
+                        <div className={classes.mechanismMediaFull}>
                             <FigureCard
                                 src="/assets/grafico1.png"
                                 alt="Reverse Cross-Attention Diagram"
-                                caption="A massive sequence of 2400 encoder tokens is queried by only 188 compact ratio descriptor tokens, avoiding O(n²) complexity."
                             />
                         </div>
                     </div>
@@ -206,9 +205,9 @@ export default function Home() {
                                 <span>Artifact: 02_PHIDEUS_NEURAL_ARCHITECTURES.md (sequence lengths: audio 2400 frames vs descriptor tokens)</span>
                                 <span>Cut: 2026-02-25</span>
                             </div>
-                            <Link to="/architecture" className={classes.claimLink}>
+                            <a href="https://github.com/altermundi/Phideus" target="_blank" rel="noopener noreferrer" className={classes.claimLink}>
                                 View methodology →
-                            </Link>
+                            </a>
                         </div>
 
                         {/* Claim 2 — Compute savings (safe wording; update to "Up to ~2.6×" once profiling artifact is published in Docs/Main Repo) */}
@@ -223,9 +222,9 @@ export default function Home() {
                                 </span>
                                 <span>Cut: 2026-02-25</span>
                             </div>
-                            <Link to="/architecture" className={classes.claimLink}>
+                            <a href="https://github.com/altermundi/Phideus" target="_blank" rel="noopener noreferrer" className={classes.claimLink}>
                                 View docs →
-                            </Link>
+                            </a>
                         </div>
 
                         {/* Claim 3 — +10.4pp */}
@@ -242,9 +241,9 @@ export default function Home() {
                                 <span>data/gate5b_results/scoreboard.json</span>
                                 <span>Benchmark: MAESTRO Audio↔MIDI. See Docs/Repo for methodology.</span>
                             </div>
-                            <Link to="/evidence" className={classes.claimLink}>
+                            <a href="https://github.com/altermundi/Phideus" target="_blank" rel="noopener noreferrer" className={classes.claimLink}>
                                 View evidence →
-                            </Link>
+                            </a>
                         </div>
 
                         {/* Claim 4 — +82% CKA */}
@@ -259,33 +258,20 @@ export default function Home() {
                                     between domain representations — higher means more aligned.
                                 </span>
                                 <span>Test06 (RSA/CKA) · Gate 5B · Cut: 2026-02-25</span>
-                                <span>Documents/01_FRENTES_ACTIVOS/BIAS_CONTROL/11_GATE_5_LINEA_B_SHOWCASE/README.md</span>
+                                <span>Documents/01_FRENTES_ACTIVOS/BIAS_CONTROL/10_TEST_RESULTS_06.md</span>
                             </div>
-                            <Link to="/evidence" className={classes.claimLink}>
+                            <a href="https://github.com/altermundi/Phideus" target="_blank" rel="noopener noreferrer" className={classes.claimLink}>
                                 View evidence →
-                            </Link>
+                            </a>
                         </div>
 
                     </div>
 
-                    <div className={classes.claimsSummaryFigure}>
-                        <FigureCard
-                            src="/assets/evidence/gate5b/summary/chart08_summary_dashboard.png"
-                            alt="Gate 5B Summary Dashboard"
-                            caption="Gate 5B executive summary — all evidence layers consolidated. Cut: 2026-02-25."
-                        />
-                    </div>
 
-                    <div className={classes.hypothesisSeparator}>
-                        <span className={classes.hypothesisBadge}>Research hypotheses — under investigation</span>
-                        <p className={classes.hypothesisText}>
-                            Scale-invariance as a general principle across domains beyond MAESTRO,
-                            generalization to speech and biosignals, and expansion to other sensor types
-                            are research directions currently open. They are not claimed as results.
-                        </p>
-                    </div>
 
-                    <p className={classes.freshness}>Data as of 2026-02-25</p>
+
+
+
                 </div>
             </section>
 

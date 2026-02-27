@@ -7,7 +7,6 @@ describe('App routes', () => {
         { path: '/thesis', text: /project thesis/i },
         { path: '/roadmap', text: /triplescaloneta roadmap/i },
         { path: '/evidence', text: /gate 5b evidence/i },
-        { path: '/evidence/test-12', text: /performance scoreboard/i },
         { path: '/architecture', text: /architecture explorer/i },
     ];
 
