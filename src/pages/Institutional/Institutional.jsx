@@ -9,12 +9,6 @@ export default function Institutional() {
                 {/* ── HEADER ── */}
                 <header className={classes.header}>
                     <span className={classes.headerTag}>Institutional</span>
-                    <h1 className={classes.title}>Be Part of This</h1>
-                    <p className={classes.lead}>
-                        PHIDEUS is an open research program. The scientific questions are genuinely open.
-                        The architecture decisions are empirically driven. The next escalons will require
-                        people with different skills, different domains, and different ways of seeing.
-                    </p>
                 </header>
 
                 {/* ── ALTER MUNDI ── */}
