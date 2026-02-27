@@ -32,13 +32,9 @@ export default function Home() {
                         We investigate whether frequency ratios can act as a transferable information
                         language across domains — and we build AI where ratios guide attention and representation.
                     </p>
-                    <div className={classes.heroCtas}>
-                        <a href="#measured-results" className={classes.ctaPrimary}>See measured results</a>
-                        <a href="#the-thesis" className={classes.ctaGhost}>Read the vision</a>
-                        <Link to="/architecture" className={classes.ctaGhost}>Technical docs</Link>
-                        {/* Replace href with actual repo URL when available */}
-                        <a href="#" className={classes.ctaGhost}>Main repo</a>
-                    </div>
+                    <a href="https://github.com/altermundi/Phideus" target="_blank" rel="noopener noreferrer" className={classes.ctaPrimary}>See the repository</a>
+                    <Link to="/" className={classes.ctaGhost}>See the Main Index</Link>
+                    <a href="mailto:info@altermundi.net" className={classes.ctaGhost}>Know more</a>
                 </div>
             </section>
 

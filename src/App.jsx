@@ -4,7 +4,6 @@ import Roadmap from './pages/Roadmap/Roadmap';
 import Evidence from './pages/Evidence/Evidence';
 import Architecture from './pages/Architecture/Architecture';
 import Institutional from './pages/Institutional/Institutional';
-import { LanguageProvider } from './context/LanguageContext';
 import './index.css';
 
 function App() {
@@ -16,18 +15,16 @@ function App() {
     const routerBasename = canUseConfiguredBase ? configuredBase : '';
 
     return (
-        <LanguageProvider>
-            <Router basename={routerBasename}>
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/thesis" element={<Home />} />
-                    <Route path="/roadmap" element={<Roadmap />} />
-                    <Route path="/evidence" element={<Evidence />} />
-                    <Route path="/architecture" element={<Architecture />} />
-                    <Route path="/institutional" element={<Institutional />} />
-                </Routes>
-            </Router>
-        </LanguageProvider>
+        <Router basename={routerBasename}>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/thesis" element={<Home />} />
+                <Route path="/roadmap" element={<Roadmap />} />
+                <Route path="/evidence" element={<Evidence />} />
+                <Route path="/architecture" element={<Architecture />} />
+                <Route path="/institutional" element={<Institutional />} />
+            </Routes>
+        </Router>
     );
 }
 
