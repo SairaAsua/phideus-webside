@@ -16,7 +16,15 @@ export default function Home() {
             {/* ── 1. HERO ── */}
             <section className={classes.hero}>
                 <div className={`container ${classes.heroContent}`}>
-                    <h1 className={classes.title}>PHIDEUS</h1>
+                    <div className={classes.titleWrapper}>
+                        <img
+                            src="/assets/evidence/gate5b/animations/anim4_rotation_3d.gif"
+                            alt=""
+                            className={classes.titleAnim}
+                            aria-hidden="true"
+                        />
+                        <h1 className={classes.title}>PHIDEUS</h1>
+                    </div>
                     <p className={classes.subtitle}>
                         Intelligence native to proportions.
                     </p>
@@ -92,9 +100,6 @@ export default function Home() {
                             This is a research hypothesis under active investigation, not an established
                             result. Cross-modal deep learning is the experimental field where we test it.
                         </p>
-                        <Link to="/evidence" className={classes.hitLink}>
-                            {'-> See current evidence (Gate 5B)'}
-                        </Link>
                     </div>
                 </div>
             </section>
@@ -160,14 +165,6 @@ export default function Home() {
                                 Implementation details, sequence length analysis, and test results are in the
                                 technical documentation.
                             </p>
-                            <div className={classes.mechanismLinks}>
-                                <Link to="/architecture" className={classes.hitLink}>
-                                    {'-> Technical docs'}
-                                </Link>
-                                <Link to="/evidence" className={classes.hitLink}>
-                                    {'-> Evidence (Gate 5B)'}
-                                </Link>
-                            </div>
                         </div>
                         <div className={classes.mechanismMediaFull}>
                             <FigureCard

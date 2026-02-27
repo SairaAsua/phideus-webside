@@ -46,9 +46,6 @@ export default function Roadmap() {
                                 Gate 5B is not a single metric. It is a structured scientific argument.
                             </p>
                         </div>
-                        <div className={classes.statusLinks}>
-                            <Link to="/evidence" className={classes.statusCta}>See the evidence →</Link>
-                        </div>
                     </div>
                 </section>
 

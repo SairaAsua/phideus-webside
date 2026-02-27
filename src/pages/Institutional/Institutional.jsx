@@ -25,12 +25,6 @@ export default function Institutional() {
                             We are <strong>AlterMundi</strong>, a civil association dedicated to exploring and building
                             accessible, community-driven technological infrastructures.
                         </p>
-                        <p>
-                            If you work in signal processing, self-supervised learning, cross-modal
-                            representation, or auditory neuroscience — the HIT hypotheses are
-                            scientifically interesting and still open. Escalon 2 and 3 will need domain
-                            expertise in speech, EGG, ECG, and biosignal processing.
-                        </p>
                         <div className={classes.contactBlock}>
                             <p className={classes.contactLabel}>Join the research or collaborate with us:</p>
                             <a href="mailto:info@altermundi.net" className={classes.emailLink}>info@altermundi.net</a>

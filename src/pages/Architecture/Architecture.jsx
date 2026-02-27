@@ -366,10 +366,6 @@ export default function Architecture() {
                             </p>
                         </div>
                     </div>
-                    <div className={classes.connectLinks}>
-                        <Link to="/evidence" className={classes.connectLink}>Read the evidence →</Link>
-                        <Link to="/roadmap" className={classes.connectLink}>See where this goes →</Link>
-                    </div>
                 </section>
 
 
