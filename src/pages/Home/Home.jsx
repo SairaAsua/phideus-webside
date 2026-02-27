@@ -78,9 +78,9 @@ export default function Home() {
                         <p>
                             A frequency ratio is scale-invariant. The relationship 3:2 is the same whether
                             it occurs between 300 Hz and 200 Hz, or between 1,500 Hz and 1,000 Hz — the
-                            proportion is identical, only the absolute values differ. This is the same
-                            principle behind Weber's Law in perception: the nervous system responds to
-                            relative differences, not absolute magnitudes.
+                            proportion is identical, only the absolute values differ. Oscillatory systems
+                            across music, speech, and biosignals share this property: their meaningful
+                            structure is encoded in relationships between components, not in absolute values.
                         </p>
                         <p>
                             <strong>Harmonic Information Theory (HIT)</strong> proposes that part of the
@@ -145,27 +145,36 @@ export default function Home() {
             {/* ── 5. KEY MECHANISM ── */}
             <section className={classes.mechanismSection}>
                 <div className="container">
-                    <div className={classes.mechanismContainer}>
-                        <span className={classes.challengeLabel}>key mechanism</span>
-                        <h2>Reverse Cross-Attention</h2>
-                        <p className={classes.mechanismText}>
-                            In standard Transformer cross-attention, every extracted feature searches for
-                            relationships with every other feature — O(n²) operations across all cross-modal
-                            combinations. In Reverse Cross-Attention, ratio descriptor tokens act as
-                            the <em>query</em> side: they define which cross-modal relationships get
-                            explored, dramatically reducing the search space.
-                        </p>
-                        <p className={classes.mechanismText}>
-                            Implementation details, sequence length analysis, and test results are in the
-                            technical documentation.
-                        </p>
-                        <div className={classes.mechanismLinks}>
-                            <Link to="/architecture" className={classes.hitLink}>
-                                {'-> Technical docs'}
-                            </Link>
-                            <Link to="/evidence" className={classes.hitLink}>
-                                {'-> Evidence (Gate 5B)'}
-                            </Link>
+                    <div className={classes.mechanismGrid}>
+                        <div className={classes.mechanismContent}>
+                            <span className={classes.challengeLabel}>key mechanism</span>
+                            <h2>Reverse Cross-Attention</h2>
+                            <p className={classes.mechanismText}>
+                                In standard Transformer cross-attention, every extracted feature searches for
+                                relationships with every other feature — O(n²) operations across all cross-modal
+                                combinations. In Reverse Cross-Attention, ratio descriptor tokens act as
+                                the <em>query</em> side: they define which cross-modal relationships get
+                                explored, dramatically reducing the search space.
+                            </p>
+                            <p className={classes.mechanismText}>
+                                Implementation details, sequence length analysis, and test results are in the
+                                technical documentation.
+                            </p>
+                            <div className={classes.mechanismLinks}>
+                                <Link to="/architecture" className={classes.hitLink}>
+                                    {'-> Technical docs'}
+                                </Link>
+                                <Link to="/evidence" className={classes.hitLink}>
+                                    {'-> Evidence (Gate 5B)'}
+                                </Link>
+                            </div>
+                        </div>
+                        <div className={classes.mechanismMedia}>
+                            <FigureCard
+                                src="/assets/grafico1.png"
+                                alt="Reverse Cross-Attention Diagram"
+                                caption="A massive sequence of 2400 encoder tokens is queried by only 188 compact ratio descriptor tokens, avoiding O(n²) complexity."
+                            />
                         </div>
                     </div>
                 </div>

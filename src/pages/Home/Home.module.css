@@ -416,6 +416,22 @@
     margin-bottom: 1rem;
 }
 
+.mechanismGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.mechanismContent {
+    max-width: 600px;
+}
+
+.mechanismMedia {
+    display: flex;
+    justify-content: center;
+}
+
 .challengeLabel {
     font-family: var(--font-mono);
     font-size: 0.72rem;
@@ -619,9 +635,15 @@
     .rcaResultsSection {
         padding: 4rem 0;
     }
+
+    .mechanismGrid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
 }
 
 @media (max-width: 640px) {
+
     .challengeSection,
     .hitSection,
     .rcaSection,
@@ -790,16 +812,20 @@
 }
 
 .bridgeSentence {
-    border-left: 3px solid var(--accent-cyan);
-    margin: 0;
-    padding: 1rem 1.5rem;
-    font-size: 1.05rem;
-    color: var(--text-secondary);
+    border: none;
+    border-top: 1px solid rgba(0, 229, 255, 0.12);
+    border-bottom: 1px solid rgba(0, 229, 255, 0.12);
+    margin: 3rem auto 0;
+    padding: 2.5rem 0;
+    font-size: 1.6rem;
+    color: var(--text-primary);
     font-style: italic;
-    line-height: 1.6;
-    max-width: 700px;
-    background: rgba(0, 229, 255, 0.03);
-    border-radius: 0 4px 4px 0;
+    font-weight: 300;
+    line-height: 1.45;
+    text-align: center;
+    max-width: 860px;
+    background: none;
+    letter-spacing: -0.01em;
 }
 
 /* ── Key Mechanism Section ── */
@@ -949,6 +975,7 @@
 }
 
 @media (max-width: 640px) {
+
     .explorationSection,
     .mechanismSection,
     .claimsSection {
