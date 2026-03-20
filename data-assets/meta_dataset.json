@@ -1,0 +1,91 @@
+[
+  {
+    "nombre": "AudioSet",
+    "url": "https://research.google.com/audioset/",
+    "dominio": "audio",
+    "modalidades": [
+      "audio",
+      "video"
+    ],
+    "alignment_schema": "Etiquetas temporales sincronizadas con segmentos de 10s",
+    "ratio_extraction": true,
+    "ratio_ejemplo": "Relación entre componentes espectrales dominantes en audio y movimiento visual",
+    "cross_links": [
+      "VGGSound"
+    ],
+    "licencia": "CC-BY 4.0",
+    "tamanio": "1TB+"
+  },
+  {
+    "nombre": "UCI HAR",
+    "url": "https://archive.ics.uci.edu/ml/datasets/human+activity+recognition+using+smartphones",
+    "dominio": "imu",
+    "modalidades": [
+      "acelerometro",
+      "giroscopio"
+    ],
+    "alignment_schema": "Ventanas fijas sincronizadas de tiempo",
+    "ratio_extraction": true,
+    "ratio_ejemplo": "Ratios entre frecuencias de paso (acelerómetro) y rotación (giroscopio)",
+    "cross_links": [
+      "PAMAP2"
+    ],
+    "licencia": "CC-BY 4.0",
+    "tamanio": "100 MB"
+  },
+  {
+    "nombre": "DEAP",
+    "url": "https://www.eecs.qmul.ac.uk/mmv/datasets/deap/",
+    "dominio": "biosignal",
+    "modalidades": [
+      "eeg",
+      "ecg",
+      "gaze",
+      "video"
+    ],
+    "alignment_schema": "Sincronización por tiempo de experimento con señales biométricas",
+    "ratio_extraction": true,
+    "ratio_ejemplo": "Ratio entre frecuencias alfa/beta (EEG) y ritmo cardíaco (ECG)",
+    "cross_links": [
+      "DREAMER"
+    ],
+    "licencia": "Research-only",
+    "tamanio": "12 GB"
+  },
+  {
+    "nombre": "nuScenes",
+    "url": "https://www.nuscenes.org/",
+    "dominio": "lidar",
+    "modalidades": [
+      "lidar",
+      "camara",
+      "radar",
+      "imu"
+    ],
+    "alignment_schema": "Time-stamped frames a 20Hz",
+    "ratio_extraction": true,
+    "ratio_ejemplo": "Relación entre frecuencia de barrido LiDAR y tasa de fotogramas de cámara",
+    "cross_links": [
+      "KITTI"
+    ],
+    "licencia": "CC-BY-NC-SA",
+    "tamanio": "300 GB"
+  },
+  {
+    "nombre": "CWRU Bearing",
+    "url": "https://engineering.case.edu/bearingdatacenter",
+    "dominio": "vibracion",
+    "modalidades": [
+      "acelerometro_motor",
+      "acelerometro_base"
+    ],
+    "alignment_schema": "Sincronización analógica multicanal",
+    "ratio_extraction": true,
+    "ratio_ejemplo": "Ratio de frecuencia de falla de rodamiento vs frecuencia de rotación",
+    "cross_links": [
+      "IMS Bearing"
+    ],
+    "licencia": "Public Domain",
+    "tamanio": "500 MB"
+  }
+]
