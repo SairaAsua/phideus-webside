@@ -29,8 +29,9 @@ export default function Home() {
                         Intelligence native to proportions.
                     </p>
                     <p className={classes.subtitleSecondary}>
-                        We investigate whether frequency ratios can act as a transferable information
-                        language across domains — and we build AI where ratios guide attention and representation.
+                        PHIDEUS is grounded in Harmonic Information Theory: it explores, develops, and turns it
+                        into experimental architecture. What Step 1 already closed as a robust cross-modal advantage
+                        now extends to an active vocal front and a synthetic geometric testbed.
                     </p>
                     <a href="https://github.com/altermundi/Phideus" target="_blank" rel="noopener noreferrer" className={classes.ctaPrimary}>See the repository</a>
                     <Link to="/" className={classes.ctaGhost}>See the Main Index</Link>
@@ -140,6 +141,11 @@ export default function Home() {
                         We&apos;re not adding ratios as &ldquo;one more feature&rdquo;. We&apos;re testing
                         ratios as an organizing principle for attention and representation.
                     </blockquote>
+                    <p className={classes.explorationNote} style={{ textAlign: 'center', marginTop: '1.5rem', maxWidth: '680px', marginLeft: 'auto', marginRight: 'auto' }}>
+                        This double loop has already produced three visible outputs: a canonical closure in Step 1,
+                        a vocal front where the first mechanistic null is already closed, and a synthetic extension
+                        where ratio geometry can be tested with much greater control.
+                    </p>
                 </div>
             </section>
 
@@ -220,18 +226,17 @@ export default function Home() {
                             </a>
                         </div>
 
-                        {/* Claim 3 — +10.4pp */}
+                        {/* Claim 3 — +8.8pp (updated 2026-04-09) */}
                         <div className={`glass-panel ${classes.claimCard}`}>
-                            <div className={classes.claimValue}>+10.4 pp</div>
+                            <div className={classes.claimValue}>+8.8 pp</div>
                             <div className={classes.claimMeaning}>
-                                bidirectional cross-domain retrieval — 73.4% → 83.8% (D0 → d4a4)
+                                mean training-seed improvement of d4a4 over D0 in bidirectional retrieval.
                             </div>
                             <div className={classes.claimFootnote}>
                                 <span className={classes.claimScope}>
                                     Measured on current benchmark + current closed arms only.
                                 </span>
-                                <span>Test12 · Gate 5B · Cut: 2026-02-25</span>
-                                <span>data/gate5b_results/scoreboard.json</span>
+                                <span>5 training seeds · Cut: 2026-04-09</span>
                                 <span>Benchmark: MAESTRO Audio↔MIDI. See Docs/Repo for methodology.</span>
                             </div>
                             <a href="https://github.com/altermundi/Phideus" target="_blank" rel="noopener noreferrer" className={classes.claimLink}>
@@ -268,7 +273,84 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* ── 7. SCIENTIFIC FINDINGS ── */}
+            {/* ── 7. WHERE IS PHIDEUS TODAY ── */}
+            <section className={classes.currentMomentSection}>
+                <div className="container">
+                    <span className={classes.measuredBadge}>Current status</span>
+                    <h2>Where Is PHIDEUS Today</h2>
+                    <p className={classes.currentMomentIntro}>
+                        PHIDEUS is no longer just at the stage of proving the idea works once.
+                        It now combines a canonical closure in Step 1, an active vocal front where the initial
+                        mechanistic null is already closed, and a synthetic testbed where ratio geometry
+                        can be tested with much greater control.
+                    </p>
+                    <div className={classes.currentMomentGrid}>
+                        <div className={`glass-panel ${classes.momentCard}`}>
+                            <div className={classes.momentValue}>84.0% ±2.7pp</div>
+                            <div className={classes.momentLabel}>
+                                Canonical closure of d4a4 across five independent training seeds.
+                            </div>
+                        </div>
+                        <div className={`glass-panel ${classes.momentCard}`}>
+                            <div className={classes.momentValue}>4/4</div>
+                            <div className={classes.momentLabel}>
+                                Test02 has closed the capacity control for the main block.
+                            </div>
+                        </div>
+                        <div className={`glass-panel ${classes.momentCard}`}>
+                            <div className={classes.momentValue}>Step 2</div>
+                            <div className={classes.momentLabel}>
+                                Active main front; the live task is now the P2 vs P3 diagnostic.
+                            </div>
+                        </div>
+                        <div className={`glass-panel ${classes.momentCard}`}>
+                            <div className={classes.momentValue}>Step 3</div>
+                            <div className={classes.momentLabel}>
+                                Synthetic testbed already active, with dual baseline and first geometric line run.
+                            </div>
+                        </div>
+                    </div>
+                    <p className={classes.momentStamp}>Data updated as of 2026-04-09</p>
+                </div>
+            </section>
+
+            {/* ── 8. READ THE UPDATED PAPER ── */}
+            <section className={classes.paperSection}>
+                <div className={`container ${classes.paperContainer}`}>
+                    <h2>Read the Updated Paper</h2>
+                    <p className={classes.paperDescription}>
+                        The extended white paper details the Harmonic Information Theory,
+                        its interdisciplinary foundations, and the empirical results obtained to date.
+                    </p>
+                    <div className={classes.paperLinks}>
+                        <a
+                            href="/assets/docs/papper.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={classes.ctaPrimary}
+                        >
+                            Download paper (PDF)
+                        </a>
+                        <a
+                            href="https://github.com/altermundi/Phideus"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={classes.ctaGhost}
+                        >
+                            View repository
+                        </a>
+                    </div>
+                    <p className={classes.paperHitRef}>
+                        The full theoretical development of the program is now publicly available
+                        in the HIT book: open repository and web edition at{' '}
+                        <a href="https://hit.altermundi.net" target="_blank" rel="noopener noreferrer">
+                            hit.altermundi.net
+                        </a>.
+                    </p>
+                </div>
+            </section>
+
+            {/* ── 9. SCIENTIFIC FINDINGS ── */}
             <ScientificFindings />
 
         </Layout>

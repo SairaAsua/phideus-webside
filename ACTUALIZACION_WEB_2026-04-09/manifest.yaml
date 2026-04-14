@@ -1,0 +1,60 @@
+pack:
+  name: "Para_Sai Web Update"
+  version: "2026-04-09"
+  base_pack: "Para_Sai"
+  previous_delta: "ACTUALIZACION_WEB_2026-03-01"
+  base_as_of: "2026-02-25"
+  update_as_of: "2026-04-09"
+  purpose: "Incremental website content update for phideus.net"
+  language: "Spanish-first"
+  assets_policy: "no_new_assets"
+  site_status: "already_built_update_only"
+
+entrypoint:
+  path: "Para_Sai/ACTUALIZACION_WEB_2026-04-09/00_START_HERE_ACTUALIZACION_WEB.md"
+  purpose: "Executive delta brief for updating the current website"
+
+documents:
+  - path: "Para_Sai/ACTUALIZACION_WEB_2026-04-09/00_START_HERE_ACTUALIZACION_WEB.md"
+    role: "executive_delta_brief"
+  - path: "Para_Sai/ACTUALIZACION_WEB_2026-04-09/01_AUDITORIA_VIGENCIA_DELTAS_ANTERIORES.md"
+    role: "freshness_audit"
+  - path: "Para_Sai/ACTUALIZACION_WEB_2026-04-09/02_DELTA_RESULTADOS_DESDE_2026-03-01.md"
+    role: "new_results_delta"
+  - path: "Para_Sai/ACTUALIZACION_WEB_2026-04-09/03_MAPA_DE_CAMBIOS_EN_HOME.md"
+    role: "site_section_mapping"
+  - path: "Para_Sai/ACTUALIZACION_WEB_2026-04-09/04_COPY_LISTA_PARA_PEGAR.md"
+    role: "paste_ready_copy"
+  - path: "Para_Sai/ACTUALIZACION_WEB_2026-04-09/05_CLAIMS_NUMERICOS_PUBLICABLES.md"
+    role: "public_numeric_claims"
+  - path: "Para_Sai/ACTUALIZACION_WEB_2026-04-09/AGENT_BRIEFING_PROMPT.md"
+    role: "update_prompt_for_web_ai"
+
+canonical_sources:
+  - "README.md"
+  - "Documents/00_TRONCAL/Proyecto_Estado_Actual.md"
+  - "Documents/00_TRONCAL/INDICE_DOCUMENTACION.md"
+  - "Documents/00_TRONCAL/bitacora_desarrollo.md"
+  - "Documents/01_FRENTES_ACTIVOS/BIAS_CONTROL/ROADMAP_BIAS_CONTROL.md"
+  - "Documents/01_FRENTES_ACTIVOS/ESCALON_2/README.md"
+  - "Documents/01_FRENTES_ACTIVOS/ESCALON_3/README.md"
+
+legacy_inputs_kept:
+  - "Para_Sai/00_START_HERE_PHIDEUS_WEB_BRIEF.md"
+  - "Para_Sai/01_PROJECT_THESIS_AND_FRAMEWORK.md"
+  - "Para_Sai/02_TRIPLESCALONETA_ROADMAP_PUBLIC.md"
+  - "Para_Sai/03_ESCALON1_AND_BIAS_CONTROL_EVIDENCE.md"
+  - "Para_Sai/04_DESCRIPTOR_TABLE_5EP_COMPLETE.md"
+  - "Para_Sai/05_ARCHITECTURE_LINKS_AND_SYSTEM_OVERVIEW.md"
+  - "Para_Sai/06_VISUAL_ASSETS_INDEX.md"
+  - "Para_Sai/07_GATE5B_VISUAL_INSERTION_MAP.md"
+  - "Para_Sai/08_HOME_PUBLIC_TEST.html"
+  - "Para_Sai/ACTUALIZACION_WEB_2026-03-01/00_START_HERE_ACTUALIZACION_WEB.md"
+  - "Para_Sai/ACTUALIZACION_WEB_2026-03-01/04_COPY_LISTA_PARA_PEGAR.md"
+
+hard_rules:
+  - "Do not modify legacy Para_Sai files in place"
+  - "Do not add or replace assets in this update"
+  - "Do not use 84.1% +/- 2.3pp as the current public multi-seed framing of Escalon 1"
+  - "Do not present 13G-B as a positive scientific result"
+  - "Do not present Escalon 2 or Escalon 3 as merely planned"

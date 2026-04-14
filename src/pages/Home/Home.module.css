@@ -998,6 +998,113 @@
     margin-top: 2rem;
 }
 
+/* ── Current Moment Section ── */
+.currentMomentSection {
+    padding: 6rem 0;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    background: linear-gradient(180deg, rgba(0, 229, 255, 0.03) 0%, transparent 60%);
+}
+
+.currentMomentSection h2 {
+    margin-bottom: 0.75rem;
+}
+
+.currentMomentIntro {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    max-width: 720px;
+    line-height: 1.65;
+    margin-bottom: 2.5rem;
+}
+
+.currentMomentGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.25rem;
+}
+
+.momentCard {
+    padding: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    transition: border-color 0.3s ease;
+}
+
+.momentCard:hover {
+    border-color: rgba(0, 229, 255, 0.25);
+}
+
+.momentValue {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    font-family: var(--font-mono);
+    line-height: 1.1;
+}
+
+.momentLabel {
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.momentStamp {
+    margin-top: 2rem;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+    opacity: 0.55;
+}
+
+/* ── Paper Section ── */
+.paperSection {
+    padding: 5rem 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.paperContainer {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.paperContainer h2 {
+    color: var(--accent-cyan);
+    margin-bottom: 1rem;
+}
+
+.paperDescription {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.paperLinks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    justify-content: center;
+}
+
+.paperHitRef {
+    margin-top: 2.5rem;
+    font-size: 0.92rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.paperHitRef a {
+    color: var(--accent-cyan);
+    transition: opacity 0.2s;
+}
+
+.paperHitRef a:hover {
+    opacity: 0.7;
+}
+
 /* ── Responsive additions ── */
 @media (max-width: 900px) {
     .explorationGrid {
