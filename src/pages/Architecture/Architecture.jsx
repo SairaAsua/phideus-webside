@@ -259,7 +259,7 @@ export default function Architecture() {
                                             <span className={classes.walkthroughTag}>{w.tag}</span>
                                             <a href={w.url} target="_blank" rel="noopener noreferrer" className={classes.walkthroughLink}>
                                                 {w.name}
-                                                <span className={classes.viewGraphicText}>Ver gráfico</span>
+                                                <span className={classes.viewGraphicText}>View graphic</span>
                                                 <span className={classes.externalIcon}>↗</span>
                                             </a>
                                         </div>
@@ -303,7 +303,7 @@ export default function Architecture() {
                                     </span>
                                     <a href={h.url} target="_blank" rel="noopener noreferrer" className={classes.walkthroughLink}>
                                         {h.name}
-                                        <span className={classes.viewGraphicText}>Ver gráfico</span>
+                                        <span className={classes.viewGraphicText}>View graphic</span>
                                         <span className={classes.externalIcon}>↗</span>
                                     </a>
                                 </div>
